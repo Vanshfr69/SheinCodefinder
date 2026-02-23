@@ -29,8 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 function runChecker($config) {
     // Override Telegram config with user input
-    define('TELEGRAM_BOT_TOKEN', $config['bot_token'] ?? '8479991961:AAEWken8DazbjTaiN_DAGwTuY3Gq0-tb1Hc');
-    define('TELEGRAM_CHAT_ID', $config['chat_id'] ?? '1366899854');
+    define('TELEGRAM_BOT_TOKEN', $config['bot_token'] ?? '8460797939:AAHWBF8an2IbHREkoxjMAF-7mRxUV43RED8');
+    define('TELEGRAM_CHAT_ID', $config['chat_id'] ?? '8222491615');
     
     $baseNumber = $config['base_number'] ?? '';
     $numChecks = min(intval($config['num_checks'] ?? 50), 200); // Limit to 200 checks
@@ -607,4 +607,5 @@ function handleDownload($type) {
         echo 'File not found';
     }
 }
+
 ?>
